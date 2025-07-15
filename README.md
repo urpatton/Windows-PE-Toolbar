@@ -11,7 +11,11 @@ Toolbar to simplify Windows PE tasks
 ## FUNCTIONALITY
 ```
 Include in your Windows PE startup process so it autolaunches
+Files:
+	WinPETool.ps1 - Required file to launch Windows PE toolbar
+	AutopilotHash.zip - The AutopilotHash folder and files containing requirements for generating the autopilot hash in PE
 
+Buttons:
 Clean (diskpart) Drive Button:
 	Runs diskpart /s with the "clean" command
 Web Browser Button:
@@ -24,7 +28,7 @@ Explorer and DaRT Tools Button:
 	Button is disabled if files are missing
 Autopilot Hash Button:
 	Generates the Autopilot hash and writes it to the folder $env:SystemDrive\AutopilotHash
-	Requires files:
+	Requires files (included in AutopilotHash.zip:
 		"$env:SystemDrive\Windows\System32\PCPKsp.dll"
 		"$env:SystemDrive\AutopilotHash\oa3tool.exe"
 		"$env:SystemDrive\AutopilotHash\OA3.cfg"
