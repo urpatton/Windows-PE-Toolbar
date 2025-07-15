@@ -1,2 +1,39 @@
 # Windows-PE-Toolbar
-Toolbar to simplify Windows PE tasks
+## SYNOPSIS
+```
+	Windows PE Toolbar
+```
+
+## DESCRIPTION
+```
+	Toolbar to simplify Windows PE tasks
+```
+
+## FUNCTIONALITY
+```
+	Include in your Windows PE startup process so it autolaunches
+
+	Clean (diskpart) Drive Button:
+		Runs diskpart /s with the "clean" command
+	Web Browser Button:
+		Launches the web browser
+		Specify the web browser exe path in $PEToolsform_Load variable $WebBrowserPath
+		Specify the web browser URLS in $PEToolsform_Load variable $WebBrowserURL
+	Explorer and DaRT Tools Button:
+		Launches the Windows PE DaRT toolset
+		Require the DaRT tools exe and DartConfig.dat to exist.
+		Button is disabled if files are missing
+	Autopilot Hash Button:
+		Generates the Autopilot hash and writes it to the folder $env:SystemDrive\AutopilotHash
+		Requires files "$env:SystemDrive\Windows\System32\PCPKsp.dll" and "$env:SystemDrive\AutopilotHash\oa3tool.exe". and "$env:SystemDrive\AutopilotHash\OA3.cfg"
+		Button is disabled if files are missing
+	Kill Deployment Button:
+		Stops all running deployment processes and forces an immediate restart
+		TsManager.exe
+		TsmBootstrap.exe
+		TsProgressUI.exe
+		cscript.exe
+		Wscript.exe
+	Secure Disk Erase Button:
+		Runs diskpart /s with the "clean all" command
+```
