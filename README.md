@@ -14,6 +14,7 @@ Include in your Windows PE startup process so it autolaunches
 Files:
 	WinPETool.ps1 - Required file to launch Windows PE toolbar
 	AutopilotHash.zip - The AutopilotHash folder and files containing requirements for generating the autopilot hash in PE
+	Add the AutopilotHash folder to $env:SystemDrive\AutopilotHash
 
 Buttons:
 Clean (diskpart) Drive Button:
