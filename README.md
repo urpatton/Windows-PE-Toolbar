@@ -14,7 +14,7 @@ PARAMETER WebBrowserURL
 (Optional) Specify a URL for the web browser. Default is www.google.com if -WebBrowerURL is not specified or is empty.
 
 PARAMETER AllowClose
-Allows the toolbar to be closed
+(Optional) Allows the toolbar to be closed
 Default: "False"
 Accepted input: "True"
 ```
